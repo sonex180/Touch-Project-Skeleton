@@ -1,0 +1,137 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta25.1.dtd" >
+   <PATCH nodename="D:\Work\eletronika 2011\ColorFade.v4p" systemname="ColorFade" filename="D:\Work\eletronika 2011\ColorFade.v4p">
+   <BOUNDS type="Window" left="14820" top="4365" width="3060" height="4770">
+   </BOUNDS>
+   <NODE systemname="IOBox (Color)" nodename="IOBox (Color)" componentmode="InABox" id="0">
+   <BOUNDS type="Node" left="300" top="315" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="300" top="315" width="2250" height="480">
+   </BOUNDS>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Color Input|">
+   </PIN>
+   </NODE>
+   <NODE systemname="RGB (Color Split)" nodename="RGB (Color Split)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="300" top="1155" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Red" visible="1">
+   </PIN>
+   <PIN pinname="Green" visible="1">
+   </PIN>
+   <PIN pinname="Blue" visible="1">
+   </PIN>
+   <PIN pinname="Alpha" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Color Output" dstnodeid="1" dstpinname="Input">
+   </LINK>
+   <NODE systemname="LinearFilter (Animation)" nodename="LinearFilter (Animation)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="300" top="1575" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="FilterTime" visible="1">
+   </PIN>
+   <PIN pinname="Cyclic" visible="-1" pintype="Input" slicecount="1" values="NotCyclic">
+   </PIN>
+   <PIN pinname="Velocity Out" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Acceleration Out" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Red" dstnodeid="3" dstpinname="Go To Position">
+   </LINK>
+   <NODE componentmode="Hidden" id="5" nodename="LinearFilter (Animation)" systemname="LinearFilter (Animation)">
+   <BOUNDS height="100" left="525" top="1995" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="FilterTime" visible="1">
+   </PIN>
+   <PIN pinname="Cyclic" visible="-1" pintype="Input" slicecount="1" values="NotCyclic">
+   </PIN>
+   <PIN pinname="Velocity Out" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Acceleration Out" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Green" dstnodeid="5" dstpinname="Go To Position">
+   </LINK>
+   <NODE componentmode="Hidden" id="6" nodename="LinearFilter (Animation)" systemname="LinearFilter (Animation)">
+   <BOUNDS height="100" left="765" top="2415" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   <PIN pinname="FilterTime" visible="1">
+   </PIN>
+   <PIN pinname="Cyclic" visible="-1" pintype="Input" slicecount="1" values="NotCyclic">
+   </PIN>
+   <PIN pinname="Velocity Out" visible="-1" pintype="Output">
+   </PIN>
+   <PIN pinname="Acceleration Out" visible="-1" pintype="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Blue" dstnodeid="6" dstpinname="Go To Position">
+   </LINK>
+   <NODE systemname="RGB (Color Join)" nodename="RGB (Color Join)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="300" top="2835" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Alpha" visible="-1" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Red" visible="1">
+   </PIN>
+   <PIN pinname="Green" visible="1">
+   </PIN>
+   <PIN pinname="Blue" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Position Out" dstnodeid="7" dstpinname="Red">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Position Out" dstnodeid="7" dstpinname="Green">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Position Out" dstnodeid="7" dstpinname="Blue">
+   </LINK>
+   <NODE componentmode="InABox" id="8" nodename="IOBox (Color)" systemname="IOBox (Color)">
+   <BOUNDS height="100" left="300" top="3255" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="480" left="300" top="3255" type="Box" width="2250">
+   </BOUNDS>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   <PIN pinname="Color Input" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Color Output|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output" dstnodeid="8" dstpinname="Color Input">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="9">
+   <BOUNDS type="Node" left="1755" top="945" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1755" top="945" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Time">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="3" dstpinname="FilterTime">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="5" dstpinname="FilterTime">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Y Output Value" dstnodeid="6" dstpinname="FilterTime">
+   </LINK>
+   </PATCH>

@@ -1,0 +1,275 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta42.dtd" >
+   <PATCH nodename="G:\Shared drives\CRIAÇÃO\Bioparque Pantanal\MiBio\Ações\F1 Diorama interativo\Project\RoundedBoxes.v4p" systemname="RoundedBoxes" filename="G:\Shared drives\CRIAÇÃO\Bioparque Pantanal\MiBio\Ações\F1 Diorama interativo\Project\RoundedBoxes.v4p" scrollx="0" scrolly="1125">
+   <NODE systemname="RoundCornerQuad" filename="RoundCornerQuad.v4p" nodename="RoundCornerQuad.v4p" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1260" top="2370" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Switch" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Inner RadiusXY" slicecount="2" values="0.54,0.64">
+   </PIN>
+   <BOUNDS type="Window" left="5370" top="2850" width="5700" height="8850">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="RoundCornerQuad" filename="RoundCornerQuad.v4p" nodename="RoundCornerQuad.v4p" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="3045" top="2415" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Switch" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Inner RadiusXY" slicecount="2" values="0.54,0.64">
+   </PIN>
+   <BOUNDS type="Window" left="5370" top="2850" width="5700" height="8850">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3915" top="1050" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3915" top="1050" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1.24">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="X">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2040" top="1050" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2040" top="1050" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.33">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="X">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="RoundCornerQuad" filename="RoundCornerQuad.v4p" nodename="RoundCornerQuad.v4p" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="1035" top="3825" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Switch" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Inner RadiusXY" slicecount="2" values="0.54,0.64">
+   </PIN>
+   <BOUNDS type="Window" left="5370" top="2850" width="5700" height="8850">
+   </BOUNDS>
+   <PIN pinname="X" visible="1" slicecount="1" values="0.45">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4515" top="1680" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4515" top="1680" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.42">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Y">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="RoundCornerQuad" filename="RoundCornerQuad.v4p" nodename="RoundCornerQuad.v4p" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="2955" top="3870" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Switch" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Inner RadiusXY" slicecount="2" values="0.54,0.64">
+   </PIN>
+   <BOUNDS type="Window" left="5370" top="2850" width="5700" height="8850">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="RoundCornerQuad" filename="RoundCornerQuad.v4p" nodename="RoundCornerQuad.v4p" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="1080" top="5445" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Switch" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Inner RadiusXY" slicecount="2" values="0.54,0.64">
+   </PIN>
+   <BOUNDS type="Window" left="5370" top="2850" width="5700" height="8850">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="RoundCornerQuad" filename="RoundCornerQuad.v4p" nodename="RoundCornerQuad.v4p" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="3315" top="5550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Switch" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Inner RadiusXY" slicecount="2" values="0.54,0.64">
+   </PIN>
+   <BOUNDS type="Window" left="5370" top="2850" width="5700" height="8850">
+   </BOUNDS>
+   <PIN pinname="X" visible="1" slicecount="1" values="0.45">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4575" top="4590" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4575" top="4590" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.6">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Y">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4290" top="2970" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4290" top="2970" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-0.09">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Y">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="0" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="1" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="13" dstpinname="Y">
+   </LINK>
+   <BOUNDS type="Window" left="10365" top="3600" width="8175" height="6045">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.0.6">
+   </PACK>
+   <PACK Name="addonpack" Version="42.0.0">
+   </PACK>
+   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="780" top="7065" width="9600" height="270">
+   </BOUNDS>
+   <PIN pinname="Layer Template Count" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1">
+   </PIN>
+   <PIN pinname="Layer 4" visible="1">
+   </PIN>
+   <PIN pinname="Layer 5" visible="1">
+   </PIN>
+   <PIN pinname="Layer 6" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="18" dstpinname="Layer 1" linkstyle="Bezier">
+   <LINKPOINT x="1275" y="4845">
+   </LINKPOINT>
+   <LINKPOINT x="810" y="4845">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Layer" dstnodeid="18" dstpinname="Layer 2" linkstyle="Bezier">
+   <LINKPOINT x="3060" y="4860">
+   </LINKPOINT>
+   <LINKPOINT x="2400" y="4860">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Layer" dstnodeid="18" dstpinname="Layer 3" linkstyle="Bezier">
+   <LINKPOINT x="1095" y="5573">
+   </LINKPOINT>
+   <LINKPOINT x="3960" y="5573">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Layer" dstnodeid="18" dstpinname="Layer 4" linkstyle="Bezier">
+   <LINKPOINT x="3015" y="5595">
+   </LINKPOINT>
+   <LINKPOINT x="5550" y="5595">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Layer" dstnodeid="18" dstpinname="Layer 5" linkstyle="Bezier">
+   <LINKPOINT x="1140" y="6375">
+   </LINKPOINT>
+   <LINKPOINT x="7140" y="6375">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Layer" dstnodeid="18" dstpinname="Layer 6" linkstyle="Bezier">
+   <LINKPOINT x="3205" y="6380">
+   </LINKPOINT>
+   <LINKPOINT x="8900" y="6475">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="19">
+   <BOUNDS type="Box" left="885" top="7575" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="885" top="7575" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Layer" dstnodeid="19" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="9" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="13" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="4" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="10" dstpinname="X">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="4" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Y">
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Y">
+   </LINK>
+   </PATCH>

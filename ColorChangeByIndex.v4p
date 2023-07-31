@@ -1,0 +1,103 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta42.dtd" >
+   <PATCH nodename="G:\Shared drives\CRIAÇÃO\Bioparque Pantanal\MiBio\Ações\F1 Diorama interativo\Source\ColorChangeByIndex.v4p" systemname="ColorChangeByIndex" filename="G:\Shared drives\CRIAÇÃO\Bioparque Pantanal\MiBio\Ações\F1 Diorama interativo\Source\ColorChangeByIndex.v4p">
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2535" top="2415" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="StateIndex">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="2490" top="2835" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Color Input)" nodename="Switch (Color Input)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="2265" top="3840" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ColorFade" filename="ColorFade.v4p" nodename="ColorFade.v4p" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="2385" top="4395" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Color Input" visible="1">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (Color)" nodename="GetSlice (Color)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="1500" top="2310" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="10">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (Color)" nodename="GetSlice (Color)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="2880" top="2085" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="6" values="|0.98824,0.78039,0.16863,1.00000|,|0.19216,0.76471,0.54902,1.00000|,|0.05490,0.51373,0.77647,1.00000|,|0.96078,0.36078,0.27843,1.00000|,|0.11373,0.11373,0.12157,1.00000|,|0.96078,0.96078,0.96863,1.00000|">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="11">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Color)" componentmode="InABox" id="6" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="2235" top="1500" width="285" height="510">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2235" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="6" visible="1" values="|0.98824,0.78039,0.16863,1.00000|,|0.19216,0.76471,0.54902,1.00000|,|0.05490,0.51373,0.77647,1.00000|,|0.96078,0.36078,0.27843,1.00000|,|0.11373,0.11373,0.12157,1.00000|,|0.96078,0.96078,0.96863,1.00000|">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Color Output" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="2" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="2" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="2" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="3" dstpinname="Color Input">
+   </LINK>
+   <NODE id="7" systemname="IOBox (Color)" componentmode="InABox" nodename="IOBox (Color)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Color Output|">
+   </PIN>
+   <BOUNDS type="Box" left="2385" top="4995" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2385" top="4995" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Color Output" dstnodeid="7" dstpinname="Color Input">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Input Value" dstnodeid="1" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Color Output" dstnodeid="5" dstpinname="Input">
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="4480" height="5995">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.0.6">
+   </PACK>
+   <PACK Name="addonpack" Version="42.0.0">
+   </PACK>
+   </PATCH>

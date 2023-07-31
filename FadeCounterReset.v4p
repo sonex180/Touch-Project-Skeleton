@@ -1,0 +1,147 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta42.dtd" >
+   <PATCH nodename="G:\Shared drives\CRIAÇÃO\Campo Analises\Feiras 2022\Campo 2022\V2\FadeCounterReset.v4p" systemname="FadeCounterReset" filename="G:\Drives compartilhados\CRIAÇÃO\Campo Analises\Feiras 2022\Campo 2022\V2\FadeCounterReset.v4p" scrollx="0" scrolly="-360">
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="3900" top="1620" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="States">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="3" systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden">
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Node" left="3840" top="3225" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="1680" top="1500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="StateIndex">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE id="6" systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden">
+   <BOUNDS type="Node" left="1650" top="2520" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE id="7" systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden">
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Node" left="1590" top="2985" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="1500" top="3555" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="ResetShuffle">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (Value)" nodename="S (Value)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="6075" top="3150" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" slicecount="1" visible="1" values="NAN">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="AlphaFade">
+   </PIN>
+   </NODE>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="2400" top="4560" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input 3" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Up Edge" dstnodeid="8" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="7" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Up Edge" dstnodeid="10" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Up Edge" dstnodeid="10" dstpinname="Input 2">
+   </LINK>
+   <NODE id="11" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="ContentReset">
+   </PIN>
+   <BOUNDS type="Box" left="2400" top="5160" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2400" top="5160" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output" dstnodeid="11" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="12" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="PointReset">
+   </PIN>
+   <BOUNDS type="Box" left="3960" top="6435" width="765" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3960" top="6435" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Up Edge" dstnodeid="12" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="13" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Input Value|">
+   </PIN>
+   <BOUNDS type="Box" left="6075" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6075" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Input Value">
+   </LINK>
+   <BOUNDS type="Window" left="5625" top="2430" width="9375" height="7980">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="42.0.0">
+   </PACK>
+   <NODE id="2" systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden">
+   <BOUNDS type="Node" left="3870" top="2640" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="3" dstpinname="Input">
+   </LINK>
+   <NODE id="1" systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden">
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Node" left="3885" top="2115" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Input Value" dstnodeid="1" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="2" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Input Value" dstnodeid="6" dstpinname="Input 1">
+   </LINK>
+   <PACK Name="dx11" Version="1.0.6">
+   </PACK>
+   </PATCH>

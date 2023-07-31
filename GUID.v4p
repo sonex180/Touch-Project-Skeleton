@@ -1,0 +1,205 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta42.dtd" >
+   <PATCH nodename="G:\Shared drives\CRIAÇÃO\Bioparque Pantanal\MiBio\Ações\F1 Diorama interativo\Source\GUID.v4p" systemname="GUID" filename="G:\Shared drives\CRIAÇÃO\Bioparque Pantanal\Museu\Ações\D2 Pegada Ecologica\GUID.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="8970" top="0" width="8805" height="5010">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="42.0.0">
+   </PACK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="3">
+   <BOUNDS type="Node" left="280" top="238" width="1393" height="210">
+   </BOUNDS>
+   <BOUNDS type="Box" left="280" top="238" width="4158" height="665">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="GUID">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="26">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="ClanOT-Bold">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="2">
+   <BOUNDS type="Node" left="301" top="924" width="553" height="210">
+   </BOUNDS>
+   <BOUNDS type="Box" left="301" top="924" width="1638" height="3164">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|user Interface&cr;&lf;Draw objects&cr;&lf;Content&cr;&lf;State Select&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Antarctican Mono Book|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch Logic" filename="Switch Logic.v4p" nodename="Switch Logic.v4p" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="2128" top="1561" width="1568" height="252">
+   </BOUNDS>
+   <PIN pinname="Standby" visible="1">
+   </PIN>
+   <PIN pinname="Home" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="8895" top="5025" width="12030" height="7770">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Standby" filename="Standby.v4p" nodename="Standby.v4p" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="2160" top="2550" width="1442" height="252">
+   </BOUNDS>
+   <PIN pinname="Standby Out" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Window" left="1253" top="581" width="10871" height="10584">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2160" top="2550">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="State-home" filename="State-home.v4p" nodename="State-home.v4p" componentmode="InAWindow" id="7" stayontop="0">
+   <BOUNDS type="Node" left="3645" top="2550" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="210" top="5715" width="15765" height="8985">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Mouse" visible="1">
+   </PIN>
+   <PIN pinname="Click" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="3645" top="2550">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="8" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="2152" top="3085" width="6000" height="270">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer Template Count" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1">
+   </PIN>
+   <PIN pinname="Layer 4" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="9">
+   <BOUNDS type="Box" left="2156" top="3675" width="693" height="210">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2156" top="3675" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Layer" dstnodeid="9" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Standby Out" dstnodeid="8" dstpinname="Layer 1">
+   </LINK>
+   <NODE systemname="EnterSleep" filename="EnterSleep.v4p" nodename="EnterSleep.v4p" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="2135" top="1120" width="1603" height="252">
+   </BOUNDS>
+   <PIN pinname="Sleep" visible="1">
+   </PIN>
+   <PIN pinname="UserDetected" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Layer" dstnodeid="8" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Sleep" dstnodeid="5" dstpinname="Standby">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="UserDetected" dstnodeid="5" dstpinname="Home" linkstyle="VHV">
+   </LINK>
+   <NODE systemname="Color and Fonts" filename="Color and Fonts.v4p" nodename="Color and Fonts.v4p" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="3843" top="1113" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Animal Page" filename="Animal Page.v4p" nodename="Animal Page.v4p" componentmode="InAWindow" id="12" stayontop="0">
+   <BOUNDS type="Node" left="5130" top="2550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="12120" top="5805" width="14955" height="9015">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5130" top="2550">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Layer" dstnodeid="8" dstpinname="Layer 3">
+   </LINK>
+   <PACK Name="dx11" Version="1.0.6">
+   </PACK>
+   <NODE systemname="Language Switch" filename="Language Switch.v4p" nodename="Language Switch.v4p" componentmode="Hidden" id="15">
+   <BOUNDS type="Node" left="6585" top="2550" width="1421" height="252">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Mouse" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Alpha" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Mouse CLick" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="3388" top="1022" width="11193" height="8715">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6585" top="2550">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="14" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="6172" top="360" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="Mouse">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Input Value" dstnodeid="15" dstpinname="Mouse" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="6340" y="1383">
+   </LINKPOINT>
+   <LINKPOINT x="6455" y="1798">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="13" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="7194" top="374" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="Click">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Input Value" dstnodeid="15" dstpinname="Mouse CLick" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="7345" y="1390">
+   </LINKPOINT>
+   <LINKPOINT x="6935" y="1805">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="15" srcpinname="Layer" dstnodeid="8" dstpinname="Layer 4">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Input Value" dstnodeid="7" dstpinname="Mouse" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="6095" y="1498">
+   </LINKPOINT>
+   <LINKPOINT x="3775" y="1653">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Input Value" dstnodeid="7" dstpinname="Click" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="7130" y="1505">
+   </LINKPOINT>
+   <LINKPOINT x="4285" y="1660">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="ContentReader" filename="ContentReader.v4p" nodename="ContentReader.v4p" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="3825" top="1605" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="10755" top="1320" width="8850" height="9210">
+   </BOUNDS>
+   </NODE>
+   </PATCH>

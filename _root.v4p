@@ -1,0 +1,111 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta42.dtd" >
+   <PATCH nodename="G:\Shared drives\CRIAÇÃO\_SOFTWARES\Touch Project Skeleton\_root.v4p" systemname="_root" filename="G:\Shared drives\CRIAÇÃO\Bioparque Pantanal\Museu\Ações\D2 Pegada Ecologica\_root.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="0" top="0" width="9030" height="5010">
+   </BOUNDS>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="0">
+   <BOUNDS type="Node" left="504" top="413" width="1393" height="210">
+   </BOUNDS>
+   <BOUNDS type="Box" left="504" top="413" width="5264" height="693">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|F1 Diorama|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="26">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="ClanOT-Bold">
+   </PIN>
+   </NODE>
+   <NODE systemname="Inspektor (VVVV)" nodename="Inspektor (VVVV)" componentmode="InAWindow" id="1">
+   <BOUNDS type="Node" left="5025" top="3225" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5025" top="3225" width="2261" height="2786">
+   </BOUNDS>
+   <BOUNDS type="Window" left="24600" top="0" width="4200" height="5835">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="2">
+   <BOUNDS type="Node" left="560" top="1155" width="553" height="210">
+   </BOUNDS>
+   <BOUNDS type="Box" left="560" top="1155" width="1750" height="3738">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Details&cr;&lf;Background&cr;&lf;GUID control&cr;&lf;Render&cr;&lf;Inspektor|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Font" slicecount="1" values="|Antarctican Mono Book|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="10">
+   </PIN>
+   </NODE>
+   <PACK Name="addonpack" Version="42.0.0">
+   </PACK>
+   <NODE systemname="Render" filename="Render.v4p" nodename="Render.v4p" componentmode="InAWindow" id="3" hiddenwhenlocked="0">
+   <BOUNDS type="Node" left="2680" top="3225" width="2247" height="252">
+   </BOUNDS>
+   <BOUNDS type="Window" left="17595" top="0" width="6885" height="4995">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="6" values="|0.98824,0.78039,0.16863,1.00000|,|0.19216,0.76471,0.54902,1.00000|,|0.05490,0.51373,0.77647,1.00000|,|0.96078,0.36078,0.27843,1.00000|,|0.11373,0.11373,0.12157,1.00000|,|0.96078,0.96078,0.96863,1.00000|">
+   </PIN>
+   </NODE>
+   <NODE systemname="GUID" filename="GUID.v4p" nodename="GUID.v4p" componentmode="InAWindow" id="5">
+   <BOUNDS type="Node" left="3940" top="1965" width="1855" height="252">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8970" top="0" width="8805" height="5010">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Command" filename="Command.v4p" nodename="Command.v4p" componentmode="Hidden" id="6" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="5200" top="1384" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Cursor" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="7" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="2680" top="2658" width="3857" height="252">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer Template Count" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Layer" dstnodeid="3" dstpinname="Layers">
+   </LINK>
+   <NODE systemname="background" filename="background.v4p" nodename="background.v4p" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="2687" top="1979" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="BGRender" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="1799" top="658" width="12677" height="8750">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="BGRender" dstnodeid="7" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Layer" dstnodeid="7" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Cursor" dstnodeid="7" dstpinname="Layer 3">
+   </LINK>
+   <PACK Name="dx11" Version="1.0.6">
+   </PACK>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="3" dstpinname="Input">
+   </LINK>
+   </PATCH>

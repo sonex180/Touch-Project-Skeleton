@@ -1,0 +1,129 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta42.dtd" >
+   <PATCH nodename="G:\Shared drives\CRIAÇÃO\Bioparque Pantanal\MiBio\Ações\F1 Diorama interativo\Project\animal texture.v4p" systemname="animal texture" filename="G:\Shared drives\CRIAÇÃO\Bioparque Pantanal\MiBio\Ações\F1 Diorama interativo\Project\animal texture.v4p">
+   <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1507" top="1539" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Directory" slicecount="1" values="Textures\animais\1">
+   </PIN>
+   <PIN pinname="Filenames" visible="1">
+   </PIN>
+   <PIN pinname="Update" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="1500" top="1910" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="2635" top="1575" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Directory" slicecount="1" values="Textures\animais\2">
+   </PIN>
+   <PIN pinname="Filenames" visible="1">
+   </PIN>
+   <PIN pinname="Update" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="2628" top="1946" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="3985" top="1590" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Directory" slicecount="1" values="Textures\animais\3">
+   </PIN>
+   <PIN pinname="Filenames" visible="1">
+   </PIN>
+   <PIN pinname="Update" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="3978" top="1961" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="5035" top="1500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Directory" slicecount="1" values="Textures\animais\3">
+   </PIN>
+   <PIN pinname="Filenames" visible="1">
+   </PIN>
+   <PIN pinname="Update" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="5028" top="1871" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Filenames" dstnodeid="1" dstpinname="Filename">
+   </LINK>
+   <NODE id="8" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
+   </PIN>
+   <BOUNDS type="Box" left="1500" top="2561" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="2561" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Texture Out" dstnodeid="8" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Filenames" dstnodeid="3" dstpinname="Filename">
+   </LINK>
+   <NODE id="9" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out 1|">
+   </PIN>
+   <BOUNDS type="Box" left="2628" top="2561" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2628" top="2561" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Texture Out" dstnodeid="9" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Filenames" dstnodeid="5" dstpinname="Filename">
+   </LINK>
+   <NODE id="10" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out 2|">
+   </PIN>
+   <BOUNDS type="Box" left="3978" top="2561" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3978" top="2561" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Texture Out" dstnodeid="10" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Filenames" dstnodeid="7" dstpinname="Filename">
+   </LINK>
+   <NODE id="11" systemname="IOBox (Node)" componentmode="InABox" nodename="IOBox (Node)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out 3|">
+   </PIN>
+   <BOUNDS type="Box" left="5028" top="2561" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5028" top="2561" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Texture Out" dstnodeid="11" dstpinname="Input Node">
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="6635" height="3561">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.0.6">
+   </PACK>
+   <PACK Name="addonpack" Version="42.0.0">
+   </PACK>
+   </PATCH>

@@ -1,0 +1,17 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta42.dtd" >
+   <PATCH nodename="G:\Shared drives\CRIAÇÃO\Campo Analises\Feiras 2022\Campo 2022\V1\QuestionReader.v4p" systemname="QuestionReader" filename="G:\Shared drives\CRIAÇÃO\Campo Analises\Feiras 2022\Campo 2022\V1\QuestionReader.v4p">
+   <NODE systemname="Reader (String)" filename="%VVVV%\lib\nodes\modules\String\Reader (String).v4p" nodename="Reader (String)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1500" top="1500" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Writer (String)" filename="%VVVV%\lib\nodes\modules\String\Writer (String).v4p" nodename="Writer (String)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="2445" top="1500" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <BOUNDS type="Window" left="-1" top="-1" width="4045" height="3100">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.0.6">
+   </PACK>
+   <PACK Name="addonpack" Version="42.0.0">
+   </PACK>
+   </PATCH>
